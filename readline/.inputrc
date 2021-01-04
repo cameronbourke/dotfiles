@@ -1,0 +1,16 @@
+# Controls what happens when Readline wants to ring the terminal bell.
+set bell-style none
+
+# When pressing up or down arrows,
+# show only history entries that match what was already typed.
+"\ep":history-search-backward
+"\en":history-search-forward
+"\C-x\C-r": re-read-init-file
+
+# Turn on case insensitivity for tab-completion.
+# Ex.: type "doc<tab>" to search for "Documents"
+set completion-ignore-case on
+
+# Readline will try and match files whose names
+# begin with a ‘.’ (hidden files) when performing filename completion.
+set match-hidden-files on
